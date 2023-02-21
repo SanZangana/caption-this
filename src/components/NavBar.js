@@ -4,13 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../logo.svg";
+import styles from "../styles/NavBar.module.css";
 
 // Eventuellt ha en NavBar där det står vilken
 // användare man är inloggad med, tex "Signed in as: San Zangana"
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" expand="md" sticky="top">
+    <Navbar className={styles.NavBar} expand="md" sticky="top">
       <Container>
         <Navbar.Brand>
           <img src={logo} alt="logo" height="45" />
