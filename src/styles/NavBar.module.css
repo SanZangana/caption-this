@@ -5,3 +5,10 @@
     rgba(0, 0, 0, 0.877) 70%
   );
 }
+.NavLink {
+  padding: 5px;
+}
+
+.Active i {
+  color: #000000;
+}
