@@ -1,0 +1,7 @@
+.NavBar {
+  background: linear-gradient(
+    90deg,
+    rgba(160, 160, 160, 0.581) 23%,
+    rgba(0, 0, 0, 0.877) 70%
+  );
+}
