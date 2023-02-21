@@ -4,8 +4,7 @@
   "private": true,
   "engines": {
     "node": "16.19.0"
-  }
-}
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
