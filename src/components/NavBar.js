@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,11 +6,39 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../logo.svg";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
+import { CurrentUserContext } from "../App";
 
 // Eventuellt ha en NavBar där det står vilken
 // användare man är inloggad med, tex "Signed in as: San Zangana"
 
 const NavBar = () => {
+  const currentUser = useContext(CurrentUserContext);
+  const loggedInIcons = <>{currentUser?.username}</>;
+  const loggedOutIcons = (
+    <>
+      <NavDropdown title="My Account" id="basic-nav-dropdown">
+        <NavDropdown.Item>
+          <NavLink
+            className={styles.NavLink}
+            activeClassName={styles.Active}
+            to="/signup"
+          >
+            <i className="fas fa-user-plus"></i>Sign Up
+          </NavLink>
+        </NavDropdown.Item>
+        <NavDropdown.Item>
+          <NavLink
+            className={styles.NavLink}
+            activeClassName={styles.Active}
+            to="/signin"
+          >
+            <i className="fas fa-person-walking-arrow-right"></i>Sign In
+          </NavLink>
+        </NavDropdown.Item>
+      </NavDropdown>
+    </>
+  );
+
   return (
     <Navbar className={styles.NavBar} expand="md" sticky="top">
       <Container>
@@ -36,32 +64,16 @@ const NavBar = () => {
             >
               <i className="fas fa-file-signature"></i>Contact
             </NavLink>
+            {currentUser ? loggedInIcons : loggedOutIcons}
             <NavDropdown title="My Account" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <NavLink
-                  className={styles.NavLink}
-                  activeClassName={styles.Active}
-                  to="/signup"
-                >
-                  <i className="fas fa-user-plus"></i>Sign Up
-                </NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <NavLink
-                  className={styles.NavLink}
-                  activeClassName={styles.Active}
-                  to="/signin"
-                >
-                  <i class="fas fa-person-walking-arrow-right"></i>Sign In
-                </NavLink>
-              </NavDropdown.Item>
+              {currentUser ? loggedInIcons : loggedOutIcons}
               <NavDropdown.Item>
                 <NavLink
                   className={styles.NavLink}
                   activeClassName={styles.Active}
                   to="/signout"
                 >
-                  <i class="fas fa-person-circle-minus"></i>Sign Out
+                  <i className="fas fa-person-circle-minus"></i>Sign Out
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
