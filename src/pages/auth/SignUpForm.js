@@ -15,6 +15,7 @@ import {
   Alert,
 } from "react-bootstrap";
 import axios from "axios";
+
 const SignUpForm = () => {
   const [signUpData, setSignUpData] = useState({
     username: "",
@@ -43,6 +44,7 @@ const SignUpForm = () => {
       setErrors(err.response?.data);
     }
   };
+
   return (
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
@@ -78,6 +80,12 @@ const SignUpForm = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+            {errors.password1?.map((message, idx) => (
+              <Alert key={idx} variant="warning">
+                {message}
+              </Alert>
+            ))}
+
             <Form.Group className="mb-3" controlId="password2">
               <Form.Label className="d-none">Confirm Password</Form.Label>
               <Form.Control
@@ -89,6 +97,11 @@ const SignUpForm = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+            {errors.password2?.map((message, idx) => (
+              <Alert key={idx} variant="warning">
+                {message}
+              </Alert>
+            ))}
 
             <Button
               className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
@@ -96,6 +109,11 @@ const SignUpForm = () => {
             >
               Sign Up
             </Button>
+            {errors.non_field_errors?.map((message, idx) => (
+              <Alert key={idx} variant="warning" className="mt-3">
+                {message}
+              </Alert>
+            ))}
           </Form>
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
