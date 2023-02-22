@@ -52,7 +52,7 @@ const SignUpForm = () => {
           <h1 className={styles.Header}>sign up</h1>
 
           <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="username">
+            <Form.Group controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -69,7 +69,7 @@ const SignUpForm = () => {
               </Alert>
             ))}
 
-            <Form.Group className="mb-3" controlId="password1">
+            <Form.Group controlId="password1">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -86,7 +86,7 @@ const SignUpForm = () => {
               </Alert>
             ))}
 
-            <Form.Group className="mb-3" controlId="password2">
+            <Form.Group controlId="password2">
               <Form.Label className="d-none">Confirm Password</Form.Label>
               <Form.Control
                 className={styles.Input}
@@ -109,11 +109,6 @@ const SignUpForm = () => {
             >
               Sign Up
             </Button>
-            {errors.non_field_errors?.map((message, idx) => (
-              <Alert key={idx} variant="warning" className="mt-3">
-                {message}
-              </Alert>
-            ))}
           </Form>
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
