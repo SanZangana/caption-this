@@ -12,11 +12,11 @@ const NavBar = () => {
   const loggedOutIcons = (
     <>
       <NavLink
-        classname={styles.NavLink}
+        className={styles.NavLink}
         activeClassName={styles.Active}
         to="/signin"
       >
-        <i class="fas fa-person-walking-arrow-right"></i>Sign In
+        <i className="fas fa-person-walking-arrow-right"></i>Sign In
       </NavLink>
       <NavLink
         className={styles.NavLink}
