@@ -8,7 +8,7 @@ const Avatar = ({ src, height = 45, text }) => {
         className={styles.Avatar}
         src={src}
         height={height}
-        widht={height}
+        width={height}
         alt="avatar"
       />
       {text}
