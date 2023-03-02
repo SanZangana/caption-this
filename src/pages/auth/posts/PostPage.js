@@ -10,8 +10,9 @@ import { axiosReq } from "../../../api/axiosDefaults";
 import Posts from "./Posts";
 import Comment from "../comments/Comment";
 
-import CreateCommentForm from "../comments/CreateCommentForm";
+import CommentCreateForm from "../comments/CreateCommentForm";
 import { useCurrentUser } from "../../../contexts/CurrentUserContext";
+
 import InfiniteScroll from "react-infinite-scroll-component";
 import Asset from "../../../components/Assets";
 import { fetchMoreData } from "../../../utils/utils";
@@ -37,6 +38,7 @@ function PostPage() {
         console.log(err);
       }
     };
+
     handleMount();
   }, [id]);
 
@@ -47,7 +49,7 @@ function PostPage() {
         <Posts {...post.results[0]} setPosts={setPost} postPage />
         <Container className={appStyles.Content}>
           {currentUser ? (
-            <CreateCommentForm
+            <CommentCreateForm
               profile_id={currentUser.profile_id}
               profileImage={profile_image}
               post={id}
@@ -58,18 +60,24 @@ function PostPage() {
             "Comments"
           ) : null}
           {comments.results.length ? (
-            comments.results.map((comment) => (
-              <Comment
-                key={comment.id}
-                {...comment}
-                setPost={setPost}
-                setComments={setComments}
-              />
-            ))
+            <InfiniteScroll
+              children={comments.results.map((comment) => (
+                <Comment
+                  key={comment.id}
+                  {...comment}
+                  setPost={setPost}
+                  setComments={setComments}
+                />
+              ))}
+              dataLength={comments.results.length}
+              loader={<Asset spinner />}
+              hasMore={!!comments.next}
+              next={() => fetchMoreData(comments, setComments)}
+            />
           ) : currentUser ? (
             <span>No comments yet, be the first to comment!</span>
           ) : (
-            <span>No comments available</span>
+            <span>No comments... yet</span>
           )}
         </Container>
       </Col>
