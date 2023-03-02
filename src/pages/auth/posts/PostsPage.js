@@ -40,10 +40,10 @@ function PostsPage({ message, filter = "" }) {
     const timer = setTimeout(() => {
       fetchPosts();
     }, 1000);
+
     return () => {
       clearTimeout(timer);
     };
-    fetchPosts();
   }, [filter, query, pathname]);
 
   return (
