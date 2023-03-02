@@ -12,6 +12,9 @@ import Comment from "../comments/Comment";
 
 import CreateCommentForm from "../comments/CreateCommentForm";
 import { useCurrentUser } from "../../../contexts/CurrentUserContext";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Asset from "../../../components/Assets";
+import { fetchMoreData } from "../../../utils/utils";
 
 function PostPage() {
   const { id } = useParams();
