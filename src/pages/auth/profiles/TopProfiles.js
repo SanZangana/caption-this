@@ -1,36 +1,12 @@
-import { axiosReq } from "../../../api/axiosDefaults";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
-import Asset from "../../../components/Assets";
 import appStyles from "../../../App.module.css";
-import { useCurrentUser } from "../../../contexts/CurrentUserContext";
+import Asset from "../../../components/Assets";
+import { useProfileData } from "../../../contexts/ProfileDataContext";
+import Profile from "./Profile";
 
 const TopProfiles = ({ mobile }) => {
-  const [profileData, setProfileData] = useState({
-    // we will use the pageProfile later!
-    pageProfile: { results: [] },
-    topProfiles: { results: [] },
-  });
-  const { topProfiles } = profileData;
-  const currentUser = useCurrentUser();
-
-  useEffect(() => {
-    const handleMount = async () => {
-      try {
-        const { data } = await axiosReq.get(
-          "/profiles/?ordering=-followers_count"
-        );
-        setProfileData((prevState) => ({
-          ...prevState,
-          topProfiles: data,
-        }));
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    handleMount();
-  }, [currentUser]);
+  const { topProfiles } = useProfileData();
 
   return (
     <Container
@@ -44,12 +20,12 @@ const TopProfiles = ({ mobile }) => {
           {mobile ? (
             <div className="d-flex justify-content-around">
               {topProfiles.results.slice(0, 4).map((profile) => (
-                <p key={profile.id}>{profile.owner}</p>
+                <Profile key={profile.id} profile={profile} mobile />
               ))}
             </div>
           ) : (
             topProfiles.results.map((profile) => (
-              <p key={profile.id}>{profile.owner}</p>
+              <Profile key={profile.id} profile={profile} />
             ))
           )}
         </>
