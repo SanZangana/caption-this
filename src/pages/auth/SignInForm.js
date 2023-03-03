@@ -26,6 +26,7 @@ function SignInForm() {
     password: "",
   });
   const { username, password } = signInData;
+  const [alert, setAlert] = useState(false);
 
   const [errors, setErrors] = useState({});
 
@@ -35,7 +36,10 @@ function SignInForm() {
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
-      history.goBack();
+      setAlert(true);
+      setTimeout(() => {
+        history.push("/");
+      }, 2000);
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -50,6 +54,11 @@ function SignInForm() {
 
   return (
     <Row className={styles.Row}>
+      <Alert className={styles.Success} variant="success" show={alert}>
+        <p>
+          Successfully signed in as <span>{username}</span>
+        </p>
+      </Alert>
       <Col className="my-auto p-0 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>sign in</h1>
