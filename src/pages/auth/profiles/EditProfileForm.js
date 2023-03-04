@@ -36,7 +36,7 @@ const EditProfileForm = () => {
 
   useEffect(() => {
     const handleMount = async () => {
-      if (currentUser?.profile_id?.toString() === id) {
+      if (currentUser?.pk?.toString() === id) {
         try {
           const { data } = await axiosReq.get(`/accounts/${id}/`);
           const { name, content, image } = data;
