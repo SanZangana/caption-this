@@ -58,7 +58,6 @@ function ProfilePage() {
     fetchData();
   }, [id, setProfileData]);
 
-  console.log(id);
 
   const mainProfile = (
     <>
