@@ -19,7 +19,6 @@ import btnStyles from "../../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../../api/axiosDefaults";
 import { useRedirect } from "../../../hooks/useRedirect";
-import { useCurrentUser } from "../../../contexts/CurrentUserContext";
 
 function PostCreateForm() {
   useRedirect("loggedOut");
@@ -31,16 +30,9 @@ function PostCreateForm() {
     image: "",
   });
   const { title, content, image } = postData;
-  const currentUser = useCurrentUser();
 
   const imageInput = useRef(null);
   const history = useHistory();
-
-  // useEffect(() => {
-  //   if (!currentUser) {
-  //     history.push("/signin");
-  //   }
-  // }, [history]);
 
   const handleChange = (event) => {
     setPostData({
