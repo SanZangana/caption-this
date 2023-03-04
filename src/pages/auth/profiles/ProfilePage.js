@@ -42,7 +42,7 @@ function ProfilePage() {
         const [{ data: pageProfile }, { data: profilePosts }] =
           await Promise.all([
             axiosReq.get(`/accounts/${id}/`),
-            axiosReq.get(`/posts/?owner__accounts=${id}`),
+            axiosReq.get(`/posts/?owner__account=${id}`),
           ]);
         setProfileData((prevState) => ({
           ...prevState,
@@ -50,12 +50,15 @@ function ProfilePage() {
         }));
         setProfilePosts(profilePosts);
         setHasLoaded(true);
+        console.log(profilePosts);
       } catch (err) {
         console.log(err);
       }
     };
     fetchData();
   }, [id, setProfileData]);
+
+  console.log(id);
 
   const mainProfile = (
     <>
