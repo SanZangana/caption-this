@@ -1,70 +1,858 @@
-# Getting Started with Create React App
+# CAPTION THIS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![screenshot](documentation/amiresponsive-pp5.png)
 
-## Available Scripts
+Caption This is my final project submission for Code Institute's programme in Full Stack Software Development.
 
-In the project directory, you can run:
+This website is intended to be a social media platform, where users create their accounts and then upload posts to share with their friends, family or loved ones!
 
-### `npm start`
+## UX
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In this section, you will briefly explain your design processes.
 
-### `npm test`
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Colour Scheme
 
-### `npm run build`
+The colors scheme for this project could be better but the main focus I tried emphasizing was the functionality and learning the ReactJS library.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `#1d2228` used for the background color.
+- `#501b1d` used for the buttons.
+- `#adadad` used for the buttons hover effect.
+- `#FAFAFA` used for the "Top Profile" component.
+- `#951717` used for the "Posts" component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![screenshot](documentation/color-palette.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Typography
 
-### `npm run eject`
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Example:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-## Learn More
+- [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm+sans) was used for the primary headers and titles.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## User Stories
 
-### Code Splitting
+### New Site Users
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- As a new site user, I would like to \***\*create an account**, so that I can \***access all the features for signed up users**.
 
-### Analyzing the Bundle Size
+### Logged in / Returning Site Users
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- As a returning site user, I would like to **sign in to the app**, so that I can **access functionality for logged in users.**
+- As a returning site user, **I would like to see a list of the most followed profiles**, so that I can **see which profiles are popular**.
+- As a returning site user, **I would like to maintain my logged-in status until I choose to log out**, so that I can **my user experience is not compromised**.
+- As a returning site user, I would like to **edit my profile** , so that I can **change my profile picture and bio**.
+- As a returning site user, I would like to **follow and unfollow other users**, so that I can **see and remove posts by specific users in my posts feed**.
+- As a returning site user, I would like to **view content filtered by users I follow**, so that I can **keep up to date with what they are posting about.**
+- As a returning site user, I would like to **update my username and password** , so that I can **change my display name and keep my profile secure.**
+- As a returning site user, I would like to **view other users profiles** , so that I can **see their posts and learn more about them.**
+- As a returning site user, I would like to **read comments on posts**, so that I can **read what other users think about the posts.**
+- As a returning site user, I would like to **view the posts I liked ,** so that I can **find the posts I enjoy the most**
+- As a returning site user, I would like to **keep scrolling through the images on the site, that are loaded for me automatically** , so that I **don't have to click on "next page" etc**
+- As a logged in user, I would like to **create posts,** so that I can **share my images with the world.**
+- As a returning site user, I would like to **view the details of a single post,** so that I can **learn more about it.**
+- As a returning site user, I would like to **view statistics about a specific user:** **\*bio, number of posts, follows and users followed** so that I can **learn more about them.**
+- As a owner of a comment, I would like to **delete my comment** so that I can **control removal of my comment from the application.**
+- As a returning site user, I would like to **view other user's profiles** so that I can **easily identify users of the application**.
+- As a returning site user, I can **view all the most recent posts**, ordered by **_most recently created first_** so that **I am up to date with the newest content**
+- As a logged out user I can **see sign in and sign up options** so that I can **sign in/sign up**
+- As a logged in user I can **like a post** so that I can **show my support for the posts that interest me**
+- As a user I can **view the posts page** so that I can **read the comments about the post**
+- As a user, I can **search for posts with keywords,** so that I can **find the posts and user profiles I am \***most interested**\* in.**
+- As a post owner I can **edit my post title and description** so that I can **make corrections or update my post after it was created**
+- As a logged in user I can **add comments to a post** so that I can **share my thoughts about the post**
+- As an **_owner of a comment_** I can **edit my comment so that I can fix or update my existing comment**
+- As a user I can see how long ago a comment was made so that I know how old a comment is
+- As a user I can tell if I am logged in or not so that I can log in if I need to
+- As a user I can sign in to the app so that I can access functionality for logged in users
+- As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
+- As a user I can easily navigate through the site so that I am able to find the specific page I want
 
-### Making a Progressive Web App
+### Site Admin
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
+- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
+- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
+- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
+- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
 
-### Advanced Configuration
+### Existing Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Feature #1**
 
-### Deployment
+  - The home page lets the users see the most recent posts form other users. They can then choose to, **if logged in**, comment or like the post.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  - It also has a search bar, letting the user filter out the posts by search for a more enhanced experience.
 
-### `npm run build` fails to minify
+  - Because ReactJS was used for this project, I also included the infinite scroll component. This lets the user scroll and constantly get updated without having to refresh the site. Another feature meant to give the user a good experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![screenshot](documentation/home-page.png)
+
+- **Feature #2**
+
+  - The NavBar is a react-bootstrap component that I styled to give the user a easy way to find the various pages (which will be covered further down)
+
+  - Consisting of a logo and the other links, it also comes with a conditonal rendering which will change based of the users current sign in status. The screenshots below displays the difference.
+
+![screenshot](documentation/navbar-signin.png)
+![screenshot](documentation/navbar-signout.png)
+
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+- **Feature #3**
+
+  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Repeat as necessary for as many features as your site contains.
+
+Hint: the more, the merrier!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+### Future Features
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Do you have additional ideas that you'd like to include on your project in the future?
+Fantastic! List them here!
+It's always great to have plans for future improvements!
+Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- Cool new feature #1
+  - Any additional notes about this feature.
+- Cool new feature #2
+  - Any additional notes about this feature.
+- Cool new feature #3
+  - Any additional notes about this feature.
+
+## Tools & Technologies Used
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+In this section, you should explain the various tools and technologies used to develop the project.
+Make sure to put a link (where applicable) to the source, and explain what each was used for.
+Some examples have been provided, but this is just a sample only, your project might've used others.
+Feel free to delete any unused items below as necessary.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and/or [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
+- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [Python](https://www.python.org) used as the back-end programming language.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) used to help generate the Markdown files.
+- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
+- [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
+- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
+- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [Cloudinary](https://cloudinary.com) used for online static file storage.
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+
+## Database Design
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
+Understanding the relationships between different tables can save time later in the project.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Using your defined models (one example below), create an ERD with the relationships identified.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+```python
+class Product(models.Model):
+    category = models.ForeignKey(
+        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+```
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+A couple recommendations for building free ERDs:
+
+- [Draw.io](https://draw.io)
+- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+![screenshot](documentation/erd.png)
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Using Markdown formatting to represent an example ERD table using the Product model above:
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- Table: **Product**
+
+  | **PK** | **id** (unique) | Type         | Notes                    |
+  | ------ | --------------- | ------------ | ------------------------ |
+  | **FK** | category        | ForeignKey   | FK to **Category** model |
+  |        | sku             | CharField    |                          |
+  |        | name            | CharField    |                          |
+  |        | description     | TextField    |                          |
+  |        | has_sizes       | BooleanField |                          |
+  |        | price           | DecimalField |                          |
+  |        | rating          | DecimalField |                          |
+  |        | image_url       | URLField     |                          |
+  |        | image           | ImageField   |                          |
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/SanZangana/caption-this/projects) served as an Agile tool for this project.
+It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Consider adding a basic screenshot of your Projects Board.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+![screenshot](documentation/gh-projects.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/SanZangana/caption-this/issues) served as an another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped with milestone iterations on a weekly basis.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Consider adding a screenshot of your Open and Closed Issues.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- [Open Issues](https://github.com/SanZangana/caption-this/issues)
+
+  ![screenshot](documentation/gh-issues-open.png)
+
+- [Closed Issues](https://github.com/SanZangana/caption-this/issues?q=is%3Aissue+is%3Aclosed)
+
+  ![screenshot](documentation/gh-issues-closed.png)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (_max 60% of stories_)
+- **Should Have**: adds significant value, but not vital (_the rest ~20% of stories_)
+- **Could Have**: has small impact if left out (_20% of stories_)
+- **Won't Have**: not a priority for this iteration
+
+## Ecommerce Business Model
+
+This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
+It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
+such as monthly/annual subscriptions.
+
+It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
+
+## Search Engine Optimization (SEO) & Social Media Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords (only until the free trial expired).
+
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://caption-this-react.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://caption-this-react.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a mockup Facebook business account using the
+[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
+provided by Code Institute.
+
+![screenshot](documentation/mockup-facebook.png)
+
+### Newsletter Marketing
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Option 1 (MailChimp):
+
+- Sign up for a Mailchimp account
+- This allows up to 2,500 subscription email sends per month
+- Incorporate the code and scripts into your project like in the CI lessons.
+
+Option 2 (Django):
+
+- Create a custom newsletter app in your project, with a custom model.
+- This method satisfies two assessment criteria:
+  - include a newsletter
+  - one of your custom models
+- It doesn't need anything except the "email" on the model.
+- Example:
+
+  ```python
+  class Newsletter(models.Model):
+  email = models.EmailField(null=False, blank=False)
+
+  def __str__(self):
+      return self.email
+  ```
+
+- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
+  - You can trigger an email sent out to subscribed users when new products are added to the site!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+## Deployment
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+**IMPORTANT:**
+
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+The live deployed application can be found deployed on [Heroku](https://caption-this-react.herokuapp.com).
+
+### ElephantSQL Database
+
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: caption-this).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
+
+### Amazon AWS
+
+This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
+Make sure you're on the **AWS Management Console** page.
+
+#### S3 Bucket
+
+- Search for **S3**.
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
+- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
+- From the **Permissions** tab, paste in the following CORS configuration:
+
+  ```shell
+  [
+  	{
+  		"AllowedHeaders": [
+  			"Authorization"
+  		],
+  		"AllowedMethods": [
+  			"GET"
+  		],
+  		"AllowedOrigins": [
+  			"*"
+  		],
+  		"ExposeHeaders": []
+  	}
+  ]
+  ```
+
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+
+  - Policy Type: **S3 Bucket Policy**
+  - Effect: **Allow**
+  - Principal: `*`
+  - Actions: **GetObject**
+  - Amazon Resource Name (ARN): **paste-your-ARN-here**
+  - Click **Add Statement**
+  - Click **Generate Policy**
+  - Copy the entire Policy, and paste it into the **Bucket Policy Editor**
+
+    ```shell
+    {
+    	"Id": "Policy1234567890",
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Sid": "Stmt1234567890",
+    			"Action": [
+    				"s3:GetObject"
+    			],
+    			"Effect": "Allow",
+    			"Resource": "arn:aws:s3:::your-bucket-name/*"
+    			"Principal": "*",
+    		}
+    	]
+    }
+    ```
+
+  - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+  - Click **Save**.
+
+- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+  - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+
+#### IAM
+
+Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
+Once on the IAM page, follow these steps:
+
+- From **User Groups**, click **Create New Group**.
+  - Suggested Name: `group-caption-this` (group + the project name)
+- Tags are optional, but you must click it to get to the **review policy** page.
+- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown, and click **Attach Policies**.
+- Select the policy, then click **Add Permissions** at the bottom when finished.
+- From the **JSON** tab, select the **Import Managed Policy** link.
+
+  - Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+  - You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+    ```shell
+    {
+    	"Version": "2012-10-17",
+    	"Statement": [
+    		{
+    			"Effect": "Allow",
+    			"Action": "s3:*",
+    			"Resource": [
+    				"arn:aws:s3:::your-bucket-name",
+    				"arn:aws:s3:::your-bucket-name/*"
+    			]
+    		}
+    	]
+    }
+    ```
+
+  - Click **Review Policy**.
+  - Suggested Name: `policy-caption-this` (policy + the project name)
+  - Provide a description:
+    - "Access to S3 Bucket for caption-this static files."
+  - Click **Create Policy**.
+
+- From **User Groups**, click your "group-caption-this".
+- Click **Attach Policy**.
+- Search for the policy you've just created ("policy-caption-this") and select it, then **Attach Policy**.
+- From **User Groups**, click **Add User**.
+  - Suggested Name: `user-caption-this` (user + the project name)
+- For "Select AWS Access Type", select **Programmatic Access**.
+- Select the group to add your new user to: `group-caption-this`
+- Tags are optional, but you must click it to get to the **review user** page.
+- Click **Create User** once done.
+- You should see a button to **Download .csv**, so click it to save a copy on your system.
+  - **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+  - This contains the user's **Access key ID** and **Secret access key**.
+  - `AWS_ACCESS_KEY_ID` = **Access key ID**
+  - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
+- Back within **S3**, create a new folder called: `media`.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- No further settings are required, so click **Upload**.
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+  - `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+  - `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+  - `https://caption-this-react.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+  - `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+  - Any custom name, such as "Django" or caption-this
+- You'll be provided with a 16-character password (API key).
+  - Save this somewhere locally, as you cannot access this key again later!
+  - `EMAIL_HOST_PASS` = user's 16-character API key
+  - `EMAIL_HOST_USER` = user's own personal Gmail email address
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+| Key                     | Value                                                                |
+| ----------------------- | -------------------------------------------------------------------- |
+| `AWS_ACCESS_KEY_ID`     | user's own value                                                     |
+| `AWS_SECRET_ACCESS_KEY` | user's own value                                                     |
+| `DATABASE_URL`          | user's own value                                                     |
+| `DISABLE_COLLECTSTATIC` | 1 (_this is temporary, and can be removed for the final deployment_) |
+| `EMAIL_HOST_PASS`       | user's own value                                                     |
+| `EMAIL_HOST_USER`       | user's own value                                                     |
+| `SECRET_KEY`            | user's own value                                                     |
+| `STRIPE_PUBLIC_KEY`     | user's own value                                                     |
+| `STRIPE_SECRET_KEY`     | user's own value                                                     |
+| `STRIPE_WH_SECRET`      | user's own value                                                     |
+| `USE_AWS`               | True                                                                 |
+
+Heroku needs two additional files in order to deploy properly.
+
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- _replace **app_name** with the name of your primary Django app name; the folder where settings.py is located_
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace _app_name_ with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+  - `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+For either method, you will need to install any applicable packages found within the _requirements.txt_ file.
+
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
+os.environ.setdefault("DATABASE_URL", "user's own value")
+os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
+os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
+os.environ.setdefault("SECRET_KEY", "user's own value")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
+os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
+os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
+```
+
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
+
+If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
+
+- `python3 manage.py dumpdata your-model > your-model.json`
+- _repeat this action for each model you wish to backup_
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/SanZangana/caption-this)
+2. Locate the Code button above the list of files and click it
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+   - `git clone https://github.com/SanZangana/caption-this.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/SanZangana/caption-this)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/SanZangana/caption-this)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+### Local VS Deployment
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+## Credits
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+In this section you need to reference where you got your content, media, and extra help from.
+It is common practice to use code from other repositories and tutorials,
+however, it is important to be very specific about these sources to avoid plagiarism.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+### Content
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
+A few examples have been provided below to give you some ideas.
+
+Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+| Source                                                                          | Location           | Notes                                            |
+| ------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------ |
+| [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files         |
+| [Chris Beams](https://chris.beams.io/posts/git-commit)                          | version control    | "How to Write a Git Commit Message"              |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)     | entire site        | responsive HTML/CSS/JS navbar                    |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)               | contact page       | interactive pop-up (modal)                       |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp)                   | entire site        | how to use CSS :root variables                   |
+| [Flexbox Froggy](https://flexboxfroggy.com/)                                    | entire site        | modern responsive layouts                        |
+| [Grid Garden](https://cssgridgarden.com)                                        | entire site        | modern responsive layouts                        |
+| [StackOverflow](https://stackoverflow.com/a/2450976)                            | quiz page          | Fisher-Yates/Knuth shuffle in JS                 |
+| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc)                          | leaderboard        | using `localStorage()` in JS for high scores     |
+| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y)                          | PP3 terminal       | tutorial for adding color to the Python terminal |
+| [strftime](https://strftime.org)                                                | CRUD functionality | helpful tool to format date/time from string     |
+| [WhiteNoise](http://whitenoise.evans.io)                                        | entire site        | hosting static files on Heroku temporarily       |
+
+### Media
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
+A few examples have been provided below to give you some ideas.
+
+If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
+Let the assessors know that you have explicit rights to use the media files within your project.
+
+Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
+The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
+by sending yourself the following command: `!freemedia`.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+| Source                                                           | Location     | Type  | Notes                                        |
+| ---------------------------------------------------------------- | ------------ | ----- | -------------------------------------------- |
+| [Pexels](https://www.pexels.com)                                 | entire site  | image | favicon on all pages                         |
+| [Lorem Picsum](https://picsum.photos)                            | home page    | image | hero image background                        |
+| [Unsplash](https://unsplash.com)                                 | product page | image | sample of fake products                      |
+| [Pixabay](https://pixabay.com)                                   | gallery page | image | group of photos for gallery                  |
+| [Wallhere](https://wallhere.com)                                 | footer       | image | background wallpaper image in the footer     |
+| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images         |
+| [Audio Micro](https://www.audiomicro.com/free-sound-effects)     | game page    | audio | free audio files to generate the game sounds |
+| [Videvo](https://www.videvo.net/)                                | home page    | video | background video on the hero section         |
+| [TinyPNG](https://tinypng.com)                                   | entire site  | image | tool for image compression                   |
+
+### Acknowledgements
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
+A few examples have been provided below to give you some ideas.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- I would like to thank my Code Institute mentor, [John/Jane Doe](https://github.com/username) for their support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
+- I would like to thank my spouse/partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
