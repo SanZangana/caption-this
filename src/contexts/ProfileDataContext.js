@@ -38,7 +38,7 @@ export const ProfileDataProvider = ({ children }) => {
         },
       }));
     } catch (err) {
-      console.log(err);
+      // console.log(err)err);
     }
   };
 
@@ -61,7 +61,7 @@ export const ProfileDataProvider = ({ children }) => {
         },
       }));
     } catch (err) {
-      console.log(err);
+      // console.log(err)err);
     }
   };
 
@@ -76,8 +76,8 @@ export const ProfileDataProvider = ({ children }) => {
           topProfiles: data,
         }));
       } catch (err) {
-        console.log("IS THIS THE ERROR?");
-        console.log(err);
+        // console.log(err)"IS THIS THE ERROR?");
+        // console.log(err)err);
       }
     };
 

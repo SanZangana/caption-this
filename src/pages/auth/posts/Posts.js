@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../../styles/Post.module.css";
 import { useCurrentUser } from "../../../contexts/CurrentUserContext";
 import Card from "react-bootstrap/Card";
-import Media from "react-bootstrap/Media"
+import Media from "react-bootstrap/Media";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Link, useHistory } from "react-router-dom";
@@ -40,7 +40,7 @@ const Posts = (props) => {
       await axiosRes.delete(`/posts/${id}/`);
       history.goBack();
     } catch (err) {
-      console.log(err);
+      // console.log(err)err);
     }
   };
 
@@ -56,7 +56,7 @@ const Posts = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err);
+      // console.log(err)err);
     }
   };
 
@@ -72,7 +72,7 @@ const Posts = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err);
+      // console.log(err)err);
     }
   };
 
@@ -87,7 +87,10 @@ const Posts = (props) => {
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
             {is_owner && postPage && (
-            <MoreDropdown handleEdit={handleEdit} handleDelete={handleDelete} />
+              <MoreDropdown
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />
             )}
           </div>
         </Media>
