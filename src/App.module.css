@@ -1,6 +1,6 @@
 .App {
   font-family: "DM Sans", sans-serif;
-  background-color: #f8f8f8;
+  background-color: #1d2228;
   min-height: 100vh;
 }
 
@@ -11,8 +11,8 @@
 .Content {
   background-color: #ffffff;
   padding: 10px;
-  border-radius: 2px;
-  border: 1px solid #dadadf;
+  border-radius: 15px;
+  border: 1px groove #000000;
 }
 
 .FillerImage {
@@ -32,7 +32,7 @@
 }
 
 a {
-  color: #555555;
+  color: #fafafa;
   transition: color ease-in-out 0.3s;
 }
 
@@ -41,7 +41,7 @@ a:hover {
 }
 
 a:hover i {
-  color: #2142b2;
+  color: #fafafa;
   transition: color ease-in-out 0.3s;
 }
 

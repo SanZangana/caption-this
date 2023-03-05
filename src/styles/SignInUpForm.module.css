@@ -3,9 +3,9 @@
 }
 .Input {
   background: #ffffff;
-  border: 1px solid #f0f1f9;
+  border: 1px solid #2e1114;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 15px;
   color: #7177a1;
   text-align: center;
   padding: 10px;
@@ -19,7 +19,7 @@
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #2142b2;
+  color: #501b1d;
 }
 
 .Link {
@@ -27,6 +27,7 @@
   text-align: center;
   display: block;
   margin: auto;
+  color: black;
 }
 
 .Link span {
