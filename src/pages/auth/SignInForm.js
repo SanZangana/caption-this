@@ -9,6 +9,7 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 
+import FormImg from "../../assets/signin-img.jpg";
 import { Link, useHistory } from "react-router-dom";
 
 import styles from "../../styles/SignInUpForm.module.css";
@@ -55,15 +56,17 @@ function SignInForm() {
   };
 
   return (
-    <Row className={styles.Row}>
+    <Row className={`justify-content-center ${styles.Row}`}>
       <Alert className={styles.Success} variant="success" show={alert}>
         <p>
-          Successfully signed in as <span>{username}</span>
+          Good to have you back <span>{username}</span>!
         </p>
       </Alert>
       <Col className="my-auto p-0 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign in</h1>
+          <h1 className={styles.Header}>
+            Sign in & catch up with your friends posts!
+          </h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
@@ -121,10 +124,7 @@ function SignInForm() {
         md={6}
         className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
       >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
-        />
+        <Image className={`${appStyles.FillerImage}`} src={FormImg} />
       </Col>
     </Row>
   );

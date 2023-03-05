@@ -7,8 +7,14 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { useRedirect } from "../../hooks/useRedirect";
+import CameraPic from "../../assets/camera-pic.jpg";
 
-import { Form, Button, Image, Col, Row, Container } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
 import axios from "axios";
 
 const SignUpForm = () => {
@@ -132,10 +138,7 @@ const SignUpForm = () => {
         md={6}
         className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
       >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
-        />
+        <Image className={`${appStyles.FillerImage}`} src={CameraPic} />
       </Col>
     </Row>
   );
