@@ -14,6 +14,7 @@ import ProfilePage from "./pages/auth/profiles/ProfilePage";
 import UsernameForm from "./pages/auth/profiles/UsernameForm";
 import UserPasswordForm from "./pages/auth/profiles/UserPasswordForm";
 import EditProfileForm from "./pages/auth/profiles/EditProfileForm";
+import NotFound from "./components/NotFound";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -74,7 +75,7 @@ function App() {
           />
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
 
-          <Route render={() => <p>Sorry, no page found!</p>} />
+          <Route render={() => <NotFound />} />
         </Switch>
       </Container>
     </div>
