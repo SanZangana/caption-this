@@ -136,103 +136,71 @@ The colors scheme for this project could be better but the main focus I tried em
 
 ![screenshot](documentation/liked-page.png)
 
-- **Feature #3**
+- **Sign up/Sign in**
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - The forms for sign in/ signup look very similar in styling and also how they function, mainly because of simplicity.
 
-![screenshot](documentation/feature03.png)
+  - These two forms also come with authentication which alerts the users with an 'error' message, telling them if they entered a short password, a common password or if they missed other requirements.
 
-- **Feature #3**
+  ![screenshot](documentation/signup-auth.png)
+  ![screenshot](documentation/signin-auth.png)
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - If the user creates a successfull account, he/she is created by a warm welcoming message
 
-![screenshot](documentation/feature03.png)
+  ![screenshot](documentation/welcome-msg.png)
+  ![screenshot](documentation/welcome-msg2.png)
 
-- **Feature #3**
+- **My Account**
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - The 'My Account' section provides a user a simple page of their own account.
 
-![screenshot](documentation/feature03.png)
+  - They can then, edit their bio & change their profile picture
+    ![screenshot](documentation/editprofile.png)
+    ![screenshot](documentation/editprofile2.png)
 
-- **Feature #3**
+  - Change username
+    ![screenshot](documentation/edit-username.png)
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - Change password
+    ![screenshot](documentation/editpassword.png)
 
-![screenshot](documentation/feature03.png)
+- **Post**
 
-- **Feature #3**
+  - Now to the main feature of this application, since people love to post pictures...
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - The 'Post' section is where the users are able to share their beautiful pictures and show them to the world.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/upload-post.png)
 
-- **Feature #3**
+- **Comments**
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - What would this app be worth if you couldn't leave or edit an comment on your friends post?
 
-![screenshot](documentation/feature03.png)
+  - The comment form is simple and stylish, intended to give the ability for a user to comment and share their thought about the post.
+    ![screenshot](documentation/commentform.png)
 
-- **Feature #3**
+  - And, of course as a user you will have the ability to change and even delete your comment.
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-
-- **Feature #3**
-
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-
-- **Feature #3**
-
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/editcomment.png)
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+Sadly, because of time constraint, some features were left behind and neglected for this project.
+Down below you can read the features that might be in another version!
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- Instant message
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+  - Let's the user message the people they are following.
 
-- Cool new feature #1
-  - Any additional notes about this feature.
-- Cool new feature #2
-  - Any additional notes about this feature.
-- Cool new feature #3
-  - Any additional notes about this feature.
+- Re-post
+  - Want your friends to see a post but they don't follow the account? No worries, the Re-post feature is made to simplify this problem!
 
 ## Tools & Technologies Used
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
+- [ReactJS](https://reactjs.org/) used as main JS library
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and/or [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [React-Bootstrap](https://react-bootstrap.github.io/) used as the front-end CSS/JS framework for modern responsiveness and pre-built components.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -240,76 +208,11 @@ Feel free to delete any unused items below as necessary.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) used to help generate the Markdown files.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
+- [Django REST Framework](https://www.django-rest-framework.org/) used as the Python framework for the site.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
-
-## Database Design
-
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-```
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-A couple recommendations for building free ERDs:
-
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Table: **Product**
-
-  | **PK** | **id** (unique) | Type         | Notes                    |
-  | ------ | --------------- | ------------ | ------------------------ |
-  | **FK** | category        | ForeignKey   | FK to **Category** model |
-  |        | sku             | CharField    |                          |
-  |        | name            | CharField    |                          |
-  |        | description     | TextField    |                          |
-  |        | has_sizes       | BooleanField |                          |
-  |        | price           | DecimalField |                          |
-  |        | rating          | DecimalField |                          |
-  |        | image_url       | URLField     |                          |
-  |        | image           | ImageField   |                          |
 
 ## Agile Development Process
 
@@ -320,14 +223,6 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
-
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/SanZangana/caption-this/issues) served as an another Agile tool.
@@ -335,19 +230,13 @@ There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [Open Issues](https://github.com/SanZangana/caption-this/issues)
-
-  ![screenshot](documentation/gh-issues-open.png)
 
 - [Closed Issues](https://github.com/SanZangana/caption-this/issues?q=is%3Aissue+is%3Aclosed)
 
-  ![screenshot](documentation/gh-issues-closed.png)
+  ![screenshot](documentation/userstory-pp5.png)
+
+  ![screenshot](documentation/userstory2-pp5.png)
 
 ### MoSCoW Prioritization
 
@@ -359,122 +248,13 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Could Have**: has small impact if left out (_20% of stories_)
 - **Won't Have**: not a priority for this iteration
 
-## Ecommerce Business Model
-
-This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
-It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
-such as monthly/annual subscriptions.
-
-It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
-
-Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
-
-A newsletter list can be used by the business to send regular messages to site users.
-For example, what items are on special offer, new items in stock,
-updates to business hours, notifications of events, and much more!
-
-## Search Engine Optimization (SEO) & Social Media Marketing
-
-### Keywords
-
-I've identified some appropriate keywords to align with my site, that should help users
-when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
-
-- Short-tail (head terms) keywords
-- Long-tail keywords
-
-I also played around with [Word Tracker](https://www.wordtracker.com) a bit
-to check the frequency of some of my site's primary keywords (only until the free trial expired).
-
-### Sitemap
-
-I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: https://caption-this-react.herokuapp.com
-
-After it finished crawling the entire site, it created a
-[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
-
-### Robots
-
-I've created the [robots.txt](robots.txt) file at the root-level.
-Inside, I've included the default settings:
-
-```
-User-agent: *
-Disallow:
-Sitemap: https://caption-this-react.herokuapp.com/sitemap.xml
-```
-
-Further links for future implementation:
-
-- [Google search console](https://search.google.com/search-console)
-- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
-- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
-- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
-
-### Social Media Marketing
-
-Creating a strong social base (with participation) and linking that to the business site can help drive sales.
-Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
-
-I've created a mockup Facebook business account using the
-[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
-provided by Code Institute.
-
-![screenshot](documentation/mockup-facebook.png)
-
-### Newsletter Marketing
-
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Option 1 (MailChimp):
-
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
-
-Option 2 (Django):
-
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-  - include a newsletter
-  - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-
-  ```python
-  class Newsletter(models.Model):
-  email = models.EmailField(null=False, blank=False)
-
-  def __str__(self):
-      return self.email
-  ```
-
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-  - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/userstory3-pp5.png)
 
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 The live deployed application can be found deployed on [Heroku](https://caption-this-react.herokuapp.com).
 
@@ -490,179 +270,6 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 - You can leave the **Tags** blank.
 - Select the **Region** and **Data Center** closest to you.
 - Once created, click on the new database name, where you can view the database URL and Password.
-
-### Amazon AWS
-
-This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
-
-Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
-Make sure you're on the **AWS Management Console** page.
-
-#### S3 Bucket
-
-- Search for **S3**.
-- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
-- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
-- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
-- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
-- From the **Permissions** tab, paste in the following CORS configuration:
-
-  ```shell
-  [
-  	{
-  		"AllowedHeaders": [
-  			"Authorization"
-  		],
-  		"AllowedMethods": [
-  			"GET"
-  		],
-  		"AllowedOrigins": [
-  			"*"
-  		],
-  		"ExposeHeaders": []
-  	}
-  ]
-  ```
-
-- Copy your **ARN** string.
-- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-
-  - Policy Type: **S3 Bucket Policy**
-  - Effect: **Allow**
-  - Principal: `*`
-  - Actions: **GetObject**
-  - Amazon Resource Name (ARN): **paste-your-ARN-here**
-  - Click **Add Statement**
-  - Click **Generate Policy**
-  - Copy the entire Policy, and paste it into the **Bucket Policy Editor**
-
-    ```shell
-    {
-    	"Id": "Policy1234567890",
-    	"Version": "2012-10-17",
-    	"Statement": [
-    		{
-    			"Sid": "Stmt1234567890",
-    			"Action": [
-    				"s3:GetObject"
-    			],
-    			"Effect": "Allow",
-    			"Resource": "arn:aws:s3:::your-bucket-name/*"
-    			"Principal": "*",
-    		}
-    	]
-    }
-    ```
-
-  - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-  - Click **Save**.
-
-- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
-  - If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
-
-#### IAM
-
-Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
-Once on the IAM page, follow these steps:
-
-- From **User Groups**, click **Create New Group**.
-  - Suggested Name: `group-caption-this` (group + the project name)
-- Tags are optional, but you must click it to get to the **review policy** page.
-- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
-- Open the **Add Permissions** dropdown, and click **Attach Policies**.
-- Select the policy, then click **Add Permissions** at the bottom when finished.
-- From the **JSON** tab, select the **Import Managed Policy** link.
-
-  - Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
-  - You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
-
-    ```shell
-    {
-    	"Version": "2012-10-17",
-    	"Statement": [
-    		{
-    			"Effect": "Allow",
-    			"Action": "s3:*",
-    			"Resource": [
-    				"arn:aws:s3:::your-bucket-name",
-    				"arn:aws:s3:::your-bucket-name/*"
-    			]
-    		}
-    	]
-    }
-    ```
-
-  - Click **Review Policy**.
-  - Suggested Name: `policy-caption-this` (policy + the project name)
-  - Provide a description:
-    - "Access to S3 Bucket for caption-this static files."
-  - Click **Create Policy**.
-
-- From **User Groups**, click your "group-caption-this".
-- Click **Attach Policy**.
-- Search for the policy you've just created ("policy-caption-this") and select it, then **Attach Policy**.
-- From **User Groups**, click **Add User**.
-  - Suggested Name: `user-caption-this` (user + the project name)
-- For "Select AWS Access Type", select **Programmatic Access**.
-- Select the group to add your new user to: `group-caption-this`
-- Tags are optional, but you must click it to get to the **review user** page.
-- Click **Create User** once done.
-- You should see a button to **Download .csv**, so click it to save a copy on your system.
-  - **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
-  - This contains the user's **Access key ID** and **Secret access key**.
-  - `AWS_ACCESS_KEY_ID` = **Access key ID**
-  - `AWS_SECRET_ACCESS_KEY` = **Secret access key**
-
-#### Final AWS Setup
-
-- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
-- Back within **S3**, create a new folder called: `media`.
-- Select any existing media images for your project to prepare them for being uploaded into the new folder.
-- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
-- No further settings are required, so click **Upload**.
-
-### Stripe API
-
-This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
-
-Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
-
-- From your Stripe dashboard, click to expand the "Get your test API keys".
-- You'll have two keys here:
-  - `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
-  - `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
-
-As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
-
-- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
-- From there, click **Add Endpoint**.
-  - `https://caption-this-react.herokuapp.com/checkout/wh/`
-- Click **receive all events**.
-- Click **Add Endpoint** to complete the process.
-- You'll have a new key here:
-  - `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
-
-### Gmail API
-
-This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
-
-Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
-
-- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
-- Click on the **Accounts and Import** tab.
-- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
-- From this new page, select **Security** on the left.
-- Select **2-Step Verification** to turn it on. (verify your password and account)
-- Once verified, select **Turn On** for 2FA.
-- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
-- This might prompt you once again to confirm your password and account.
-- Select **Mail** for the app type.
-- Select **Other (Custom name)** for the device type.
-  - Any custom name, such as "Django" or caption-this
-- You'll be provided with a 16-character password (API key).
-  - Save this somewhere locally, as you cannot access this key again later!
-  - `EMAIL_HOST_PASS` = user's 16-character API key
-  - `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -688,83 +295,11 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_WH_SECRET`      | user's own value                                                     |
 | `USE_AWS`               | True                                                                 |
 
-Heroku needs two additional files in order to deploy properly.
+Heroku needs one additional file in order to deploy properly.
 
-- requirements.txt
 - Procfile
 
-You can install this project's **requirements** (where applicable) using:
-
-- `pip3 install -r requirements.txt`
-
-If you have your own packages that have been installed, then the requirements file needs updated using:
-
-- `pip3 freeze --local > requirements.txt`
-
-The **Procfile** can be created with the following command:
-
-- `echo web: gunicorn app_name.wsgi > Procfile`
-- _replace **app_name** with the name of your primary Django app name; the folder where settings.py is located_
-
-For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
-
-Either:
-
-- Select **Automatic Deployment** from the Heroku app.
-
-Or:
-
-- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
-- Set the remote for Heroku: `heroku git:remote -a app_name` (replace _app_name_ with your app name)
-- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
-  - `git push heroku main`
-
-The project should now be connected and deployed to Heroku!
-
 ### Local Deployment
-
-This project can be cloned or forked in order to make a local copy on your own system.
-
-For either method, you will need to install any applicable packages found within the _requirements.txt_ file.
-
-- `pip3 install -r requirements.txt`.
-
-You will need to create a new file called `env.py` at the root-level,
-and include the same environment variables listed above from the Heroku deployment steps.
-
-Sample `env.py` file:
-
-```python
-import os
-
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
-os.environ.setdefault("DATABASE_URL", "user's own value")
-os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
-os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
-os.environ.setdefault("SECRET_KEY", "user's own value")
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
-os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
-os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
-
-# local environment only (do not include these in production/deployment!)
-os.environ.setdefault("DEBUG", "True")
-```
-
-Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
-
-- Start the Django app: `python3 manage.py runserver`
-- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
-- Make any necessary migrations: `python3 manage.py makemigrations`
-- Migrate the data to the database: `python3 manage.py migrate`
-- Create a superuser: `python3 manage.py createsuperuser`
-- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
-- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
-
-If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
-
-- `python3 manage.py dumpdata your-model > your-model.json`
-- _repeat this action for each model you wish to backup_
 
 #### Cloning
 
@@ -805,24 +340,14 @@ Use this space to discuss any differences between the local version you've devel
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+I want to thank Code Institute for providing me the module from 'Moments' that gave me the inspiration, the tools & the knowledge which resulted with my own first project with ReactJS, 'Caption This'
 
 ### Content
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
 Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
 A few examples have been provided below to give you some ideas.
 
 Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source                                                                          | Location           | Notes                                            |
 | ------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------ |
@@ -869,15 +394,7 @@ by sending yourself the following command: `!freemedia`.
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- I would like to thank my Code Institute mentor, [John/Jane Doe](https://github.com/username) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/username) for their support & for the Markdown Builder!
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my spouse/partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- Last but not least, my amazing family who supports me and gives me the motivation I need to fulfill my purpose.
