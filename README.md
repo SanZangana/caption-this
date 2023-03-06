@@ -28,16 +28,6 @@ The colors scheme for this project could be better but the main focus I tried em
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm+sans) was used for the primary headers and titles.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
@@ -53,31 +43,54 @@ Example:
 - As a returning site user, I would like to **sign in to the app**, so that I can **access functionality for logged in users.**
 - As a returning site user, **I would like to see a list of the most followed profiles**, so that I can **see which profiles are popular**.
 - As a returning site user, **I would like to maintain my logged-in status until I choose to log out**, so that I can **my user experience is not compromised**.
+
 - As a returning site user, I would like to **edit my profile** , so that I can **change my profile picture and bio**.
+
 - As a returning site user, I would like to **follow and unfollow other users**, so that I can **see and remove posts by specific users in my posts feed**.
+
 - As a returning site user, I would like to **view content filtered by users I follow**, so that I can **keep up to date with what they are posting about.**
+
 - As a returning site user, I would like to **update my username and password** , so that I can **change my display name and keep my profile secure.**
+
 - As a returning site user, I would like to **view other users profiles** , so that I can **see their posts and learn more about them.**
+
 - As a returning site user, I would like to **read comments on posts**, so that I can **read what other users think about the posts.**
+
 - As a returning site user, I would like to **view the posts I liked ,** so that I can **find the posts I enjoy the most**
 - As a returning site user, I would like to **keep scrolling through the images on the site, that are loaded for me automatically** , so that I **don't have to click on "next page" etc**
+
 - As a logged in user, I would like to **create posts,** so that I can **share my images with the world.**
+
 - As a returning site user, I would like to **view the details of a single post,** so that I can **learn more about it.**
+
 - As a returning site user, I would like to **view statistics about a specific user:** **\*bio, number of posts, follows and users followed** so that I can **learn more about them.**
+
 - As a owner of a comment, I would like to **delete my comment** so that I can **control removal of my comment from the application.**
 - As a returning site user, I would like to **view other user's profiles** so that I can **easily identify users of the application**.
+
 - As a returning site user, I can **view all the most recent posts**, ordered by **_most recently created first_** so that **I am up to date with the newest content**
+
 - As a logged out user I can **see sign in and sign up options** so that I can **sign in/sign up**
+
 - As a logged in user I can **like a post** so that I can **show my support for the posts that interest me**
+
 - As a user I can **view the posts page** so that I can **read the comments about the post**
+
 - As a user, I can **search for posts with keywords,** so that I can **find the posts and user profiles I am \***most interested**\* in.**
+
 - As a post owner I can **edit my post title and description** so that I can **make corrections or update my post after it was created**
 - As a logged in user I can **add comments to a post** so that I can **share my thoughts about the post**
+
 - As an **_owner of a comment_** I can **edit my comment so that I can fix or update my existing comment**
+
 - As a user I can see how long ago a comment was made so that I know how old a comment is
+
 - As a user I can tell if I am logged in or not so that I can log in if I need to
+
 - As a user I can sign in to the app so that I can access functionality for logged in users
+
 - As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
+
 - As a user I can easily navigate through the site so that I am able to find the specific page I want
 
 ### Site Admin
@@ -90,7 +103,7 @@ Example:
 
 ### Existing Features
 
-- **Feature #1**
+- **Home Page**
 
   - The home page lets the users see the most recent posts form other users. They can then choose to, **if logged in**, comment or like the post.
 
@@ -100,7 +113,7 @@ Example:
 
 ![screenshot](documentation/home-page.png)
 
-- **Feature #2**
+- **NavBar**
 
   - The NavBar is a react-bootstrap component that I styled to give the user a easy way to find the various pages (which will be covered further down)
 
@@ -109,56 +122,68 @@ Example:
 ![screenshot](documentation/navbar-signin.png)
 ![screenshot](documentation/navbar-signout.png)
 
+- **For Your Eyes**
+
+  - This section/page is where the user will see posts from the people they follow. Intended to help the user to stay up to date with their friends & familys posts.
+
+  - If a user, for some reason, does not follow anybody, a **'not found'** page will appear asking the user to try another keyword or to simply start following other users.
+
+![screenshot](documentation/notfound.png)
+
+- **Liked posts**
+
+  - Almost the same concept as "For Your Eyes" except this page is for the posts that the user liked. This will ensure that the user only sees the posts he/she liked.
+
+![screenshot](documentation/liked-page.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
+
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
-- **Feature #3**
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-- **Feature #3**
-
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
 - **Feature #3**
 
   - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
