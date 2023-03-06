@@ -6,14 +6,6 @@ Caption This is my final project submission for Code Institute's programme in Fu
 
 This website is intended to be a social media platform, where users create their accounts and then upload posts to share with their friends, family or loved ones!
 
-## UX
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Colour Scheme
 
 The colors scheme for this project could be better but the main focus I tried emphasizing was the functionality and learning the ReactJS library.
@@ -92,14 +84,6 @@ The colors scheme for this project could be better but the main focus I tried em
 - As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
 
 - As a user I can easily navigate through the site so that I am able to find the specific page I want
-
-### Site Admin
-
-- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
-- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
-- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
-- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
-- As a site administrator, I should be able to \***\*\_\_\_\_\*\***, so that I can \***\*\_\_\_\_\*\***.
 
 ### Existing Features
 
@@ -322,7 +306,6 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-
 ## Credits
 
 I want to thank Code Institute for providing me the module from 'Moments' that gave me the inspiration, the tools & the knowledge which resulted with my own first project with ReactJS, 'Caption This'
@@ -334,10 +317,10 @@ A few examples have been provided below to give you some ideas.
 
 Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
 
-| Source                                                                          | Location           | Notes                                            |
-| ------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------ |
-| [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files         |
-| [Moments]https://github.com/Code-Institute-Solutions/moments)                   | CODE               | The code that inspired me      |
+| Source                                                                          | Location           | Notes                                    |
+| ------------------------------------------------------------------------------- | ------------------ | ---------------------------------------- |
+| [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Moments]https://github.com/Code-Institute-Solutions/moments)                   | CODE               | The code that inspired me                |
 
 ### Acknowledgements
 
