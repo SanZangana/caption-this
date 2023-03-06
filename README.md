@@ -145,7 +145,7 @@ The colors scheme for this project could be better but the main focus I tried em
   ![screenshot](documentation/signup-auth.png)
   ![screenshot](documentation/signin-auth.png)
 
-  - If the user creates a successfull account, he/she is created by a warm welcoming message
+  - If the user creates a successfull account, he/she is greeted by a warm welcoming message
 
   ![screenshot](documentation/welcome-msg.png)
   ![screenshot](documentation/welcome-msg2.png)
